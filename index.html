@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de Tarefas da Soph🍄</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="https://th.bing.com/th/id/OIP.L9pNzjmjJXGrlCRsIecYBQAAAA?rs=1&pid=ImgDetMain" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+    
+    <h1>Lista de Tarefas da Soph🍄</h1>
+    <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
+    <input type="date" id="dueDate">
+    <select id="priority">
+        <option value="Alta">Alta</option>
+        <option value="Média">Média</option>
+        <option value="Baixa">Baixa</option>
+    </select>
+    <button onclick="addTask()">Adicionar</button>
+    <button onclick="clearTasks()">Limpar Tarefas</button>
+
+    <div id="weather" class="weather"></div>
+    <button onclick="fetchWeatherSaoVicente()">São Vicente</button>
+    <button onclick="fetchWeatherSaoPaulo()">São Paulo</button>
+
+    <div id="taskList" class="task-list"></div>
+    <div id="tabContent" class="tab-content"></div>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
